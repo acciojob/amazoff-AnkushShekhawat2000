@@ -9,7 +9,8 @@ import java.util.List;
 public class OrderService {
 
 
-    OrderRepository orderRepository = new OrderRepository();
+    @Autowired
+    OrderRepository orderRepository;
 
     public void addPartner(String partnerId) {
 

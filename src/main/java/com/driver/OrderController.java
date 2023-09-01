@@ -23,7 +23,8 @@ public class OrderController {
 //
 
 
-    OrderService orderService = new OrderService();
+    @Autowired
+    OrderService orderService;
 
 
     @PostMapping("/add-order")
